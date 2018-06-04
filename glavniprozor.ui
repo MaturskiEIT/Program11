@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GlavniProzor</class>
+ <widget class="QMainWindow" name="GlavniProzor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pozoriste</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuUnos">
+    <property name="title">
+     <string>Unos</string>
+    </property>
+    <addaction name="actionRezervacije"/>
+    <addaction name="actionPredstave"/>
+   </widget>
+   <widget class="QMenu" name="menuPregledi">
+    <property name="title">
+     <string>Pregledi</string>
+    </property>
+    <addaction name="actionPo_trupama"/>
+    <addaction name="actionPo_komadima"/>
+   </widget>
+   <widget class="QMenu" name="menuKraj">
+    <property name="title">
+     <string>Kraj</string>
+    </property>
+    <addaction name="actionIzlaz"/>
+   </widget>
+   <addaction name="menuUnos"/>
+   <addaction name="menuPregledi"/>
+   <addaction name="menuKraj"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionRezervacije">
+   <property name="text">
+    <string>Rezervacije</string>
+   </property>
+  </action>
+  <action name="actionPredstave">
+   <property name="text">
+    <string>Predstave</string>
+   </property>
+  </action>
+  <action name="actionPo_trupama">
+   <property name="text">
+    <string>Po trupama</string>
+   </property>
+  </action>
+  <action name="actionPo_komadima">
+   <property name="text">
+    <string>Po komadima</string>
+   </property>
+  </action>
+  <action name="actionIzlaz">
+   <property name="text">
+    <string>Izlaz</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+I</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
